@@ -36,7 +36,7 @@
 ## 📦 Installation & Setup
 
 ### 1. Clone the Repository
-```bash
+bash\n1
 git clone https://github.com/elfahl52/my-first-react-app.git
 cd my-first-react-app
 
