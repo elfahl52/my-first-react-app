@@ -22,15 +22,20 @@ A modern web application built with React and Vite using JavaScript.
 ```bash
 git clone https://github.com/elfahl52/my-first-react-app.git
 
--Install dependencies:
-npm install
-
+Install dependencies:
+bash-> npm install
 Start the development server:
- npm run dev
+bash -> npm run dev
 
-## 🌐 Live Demo
+2.Install dependencies:
+npm install
+3.Start the development server:
+npm run dev
 
-Visit our [live demo](https://my-first-react-app-five-tawny.vercel.app/)
+🌐 Live Demo
+Visit our live demo
 
-👨‍💻 Devolper
-Khaled Elfahl 
+👨‍💻 Developer
+Khaled Elfahl
+
+
