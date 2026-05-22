@@ -24,30 +24,46 @@
 
 ## 🛠️ Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
+| Technology | Purpose    |
+|------------|------------|
 | React      | UI Library |
 | Vite       | Build Tool |
-| JavaScript | Logic |
-| CSS3       | Styling |
+| JavaScript | Logic      |
+| CSS3       | Styling    |
 
 ---
 
 ## 📦 Installation & Setup
 
 ### 1. Clone the Repository
-bash\n1
+
+```bash
 git clone https://github.com/elfahl52/my-first-react-app.git
 cd my-first-react-app
+```
 
-2. Install Dependencies
-bash
-1
-3. Start Development Server
-bash
-1
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Start Development Server
+
+```bash
+npm run dev
+```
+
 After running, open: http://localhost:5173
-🌐 Live Demo
-👉 https://my-first-react-app-five-tawny.vercel.app/
-👨‍💻 Developer
-Khaled Elfahl
+
+---
+
+## 🌐 Live Demo
+
+👉 [https://my-first-react-app-five-tawny.vercel.app/](https://my-first-react-app-five-tawny.vercel.app/)
+
+---
+
+## 👨‍💻 Developer
+
+**Khaled Elfahl**
