@@ -39,18 +39,15 @@
 ```bash
 git clone https://github.com/elfahl52/my-first-react-app.git
 cd my-first-react-app
+
 2. Install Dependencies
-npm install
+bash
+1
 3. Start Development Server
-npm run dev
-
-After running, open:
-
- https://my-first-react-app-five-tawny.vercel.app/
+bash
+1
+After running, open: http://localhost:5173
 🌐 Live Demo
-
-👉 View Live Demo
-
+👉 https://my-first-react-app-five-tawny.vercel.app/
 👨‍💻 Developer
-
 Khaled Elfahl
