@@ -1,0 +1,384 @@
+/* ================================
+   Contact Section - Full Styling
+   ================================ */
+
+.contact {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 50px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.contact h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff, #00d4ff);
+  border-radius: 2px;
+}
+
+/* ================================
+   Container Layout
+   ================================ */
+
+.contact .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.contact .container > div {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact .container > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* ================================
+   Left Side - Form Styling
+   ================================ */
+
+.contact .left form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input Groups with Icons */
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 2px solid #e1e5eb;
+  border-radius: 10px;
+  padding: 12px 18px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.input-group:focus-within {
+  border-color: #007bff;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
+  background: #f8fbff;
+}
+
+.input-icon {
+  font-size: 18px;
+  color: #6c757d;
+  margin-right: 12px;
+  min-width: 20px;
+  transition: color 0.3s ease;
+}
+
+.input-group:focus-within .input-icon {
+  color: #007bff;
+}
+
+.input-group input,
+.input-group textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+  color: #2c3e50;
+  background: transparent;
+  padding: 5px 0;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: #adb5bd;
+  font-weight: 400;
+}
+
+.input-group textarea {
+  min-height: 100px;
+  resize: vertical;
+  margin-top: 8px;
+}
+
+/* Submit Button */
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #004494);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 91, 187, 0.3);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+.submit-btn svg {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.submit-btn:hover svg {
+  transform: translateX(3px);
+}
+
+/* ================================
+   Right Side - Contact Info
+   ================================ */
+
+.contact .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact .right h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #e1e5eb;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 22px;
+  padding: 12px 0;
+  transition: transform 0.2s ease;
+}
+
+.info-item:hover {
+  transform: translateX(5px);
+}
+
+.info-icon {
+  font-size: 22px;
+  color: #007bff;
+  min-width: 24px;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.info-item p {
+  margin: 0;
+  color: #495057;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.info-item p:first-of-type {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* ================================
+   Responsive Design 📱
+   ================================ */
+
+@media (max-width: 992px) {
+  .contact {
+    padding: 60px 20px;
+  }
+  
+  .contact h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact .container {
+    flex-direction: column;
+  }
+  
+  .contact .container > div {
+    min-width: 100%;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .contact .right h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .info-item {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .info-item p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 40px 15px;
+  }
+  
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+  
+  .input-group {
+    padding: 10px 15px;
+  }
+  
+  .input-icon {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .submit-btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+  
+  .info-icon {
+    font-size: 20px;
+  }
+  
+  .info-item p {
+    font-size: 14px;
+  }
+}
+
+/* ================================
+   Dark Mode Support 🌙 (Optional)
+   ================================ */
+
+@media (prefers-color-scheme: dark) {
+  .contact {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  }
+  
+  .contact h2,
+  .contact .right h3 {
+    color: #f8f9fa;
+  }
+  
+  .contact .container > div {
+    background: #1e293b;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .input-group {
+    border-color: #334155;
+    background: #0f172a;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    color: #f1f5f9;
+  }
+  
+  .input-group input::placeholder,
+  .input-group textarea::placeholder {
+    color: #64748b;
+  }
+  
+  .input-icon,
+  .info-icon {
+    color: #94a3b8;
+  }
+  
+  .input-group:focus-within {
+    border-color: #3b82f6;
+    background: #1e293b;
+  }
+  
+  .input-group:focus-within .input-icon {
+    color: #3b82f6;
+  }
+  
+  .info-item p {
+    color: #cbd5e1;
+  }
+  
+  .info-item p:first-of-type {
+    color: #f1f5f9;
+  }
+  
+  .submit-btn {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  }
+  
+  .submit-btn:hover {
+    background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  }
+}
+
+/* ================================
+   Animations ✨
+   ================================ */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact .container > div {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.contact .container > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+/* Focus visible for accessibility */
+.input-group input:focus-visible,
+.input-group textarea:focus-visible,
+.submit-btn:focus-visible {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}

@@ -1,0 +1,49 @@
+.home {
+    background-image: url('./assets/gallery3.png'); /* أو المسار النسبي الصحيح */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; /* ثابتة أثناء السكرول */
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-blend-mode: color;
+        background-color: rgba(0, 0, 0, 0.5); /* طبقة داكنة لتحسين وضوح النص */
+
+}
+
+.home h1 {
+    font-size: 4rem;
+    color: rgb(228, 41, 41);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* تحسين القراءة على الخلفية */
+}
+
+.home p {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    padding: 10px;
+     line-height: 2;
+}
+
+.home button {
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 5px; /* تحسين الشكل */
+    transition: background-color 0.3s;
+}
+
+.home button:hover {
+    background-color: #0056b3;
+}
