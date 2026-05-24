@@ -1,22 +1,23 @@
-.services{
+.services {
     padding: 50px;
     background-color: #f4f4f4;
     text-align: center;
 }
-.services h2{
+
+.services h2 {
     color: #333;
     font-size: 2em;
     margin-bottom: 20px;
-
 }
-.services .container{
+
+.services .container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
-
 }
-.services .container .card{
+
+.services .container .card {
     width: calc(33.33% - 20px);
     background-color: #fff;
     padding: 20px;
@@ -25,30 +26,33 @@
     transition: transform 0.3s ease;
     cursor: pointer;
 }
-.services .container .card:hover{
-    transform: translateY(-5px);
 
+.services .container .card:hover {
+    transform: translateY(-5px);
 }
-.services .container .card img{
+
+.services .container .card img {
     width: 100%;
     height: 300px;
     border-radius: 5px;
     margin-bottom: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
+    object-fit: cover; /* ✅ Added: prevents image distortion */
 }
-.services .container .card h3{
+
+.services .container .card h3 {
     color: #333;
     font-size: 1.5em;
     margin-bottom: 10px;
-
 }
-.services .container .card p{
+
+.services .container .card p {
     color: #666;
     font-size: 1em;
     line-height: 1.5;
 }
-.services .container .card button{
+
+.services .container .card button {
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
@@ -59,6 +63,81 @@
     transition: background-color 0.3s ease;
     margin-top: 10px;
 }
-.services .container .card button:hover{
+
+.services .container .card button:hover {
     background-color: #45a049;
+}
+
+/* ─── Tablet: 2 cards per row ─────────────────────────── */
+@media (max-width: 1024px) {
+    .services {
+        padding: 40px 30px;
+    }
+
+    .services .container .card {
+        width: calc(50% - 20px);
+    }
+
+    .services .container .card img {
+        height: 220px;
+    }
+}
+
+/* ─── Mobile landscape / small tablet: 2 cards per row ── */
+@media (max-width: 768px) {
+    .services {
+        padding: 30px 20px;
+    }
+
+    .services h2 {
+        font-size: 1.6em;
+    }
+
+    .services .container {
+        gap: 16px;
+    }
+
+    .services .container .card {
+        width: calc(50% - 16px);
+        padding: 15px;
+    }
+
+    .services .container .card img {
+        height: 180px;
+    }
+
+    .services .container .card h3 {
+        font-size: 1.2em;
+    }
+}
+
+/* ─── Mobile portrait: 1 card per row ────────────────── */
+@media (max-width: 480px) {
+    .services {
+        padding: 25px 15px;
+    }
+
+    .services h2 {
+        font-size: 1.4em;
+    }
+
+    .services .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .services .container .card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .services .container .card img {
+        height: 200px;
+    }
+
+    .services .container .card button {
+        width: 100%;
+        padding: 12px 20px;
+    }
 }
